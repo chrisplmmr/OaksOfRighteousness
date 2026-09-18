@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oaks of Righteousness | Personal Apologetics</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#f4f1eb',      // Warm sand
+                        surface: '#ebe6dd',   // Slightly darker sand for cards
+                        forest: '#2c3f33',    // Deep, soft forest green
+                        clay: '#b36a53',      // Earthy terracotta
+                        ink: '#3a3835',       // Soft black for text
+                        stone: '#8c8a86'      // Muted gray/brown for meta text
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-base text-ink font-sans antialiased selection:bg-clay selection:text-base relative min-h-screen overflow-x-hidden">
+
+    <div class="fixed inset-0 z-[-1] opacity-[0.05] pointer-events-none">
+        <svg class="w-full h-full text-forest" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M-100,200 C150,150 250,300 500,250 C750,200 850,350 1100,300" />
+                <path d="M-100,230 C160,180 260,330 510,280 C760,230 860,380 1100,330" />
+                <path d="M-100,260 C170,210 270,360 520,310 C770,260 870,410 1100,360" />
+                <path d="M400,800 C550,650 700,750 850,600 C1000,450 1100,500 1200,400" />
+                <path d="M370,830 C520,680 670,780 820,630 C970,480 1070,530 1170,430" />
+                <circle cx="200" cy="700" r="100" />
+                <circle cx="200" cy="700" r="130" />
+                <circle cx="200" cy="700" r="160" />
+                <path d="M40,700 A160 160 0 0 1 360,700" />
+            </g>
+        </svg>
+    </div>
+
+    <nav class="w-full pt-8 pb-4 sticky top-0 bg-base/90 backdrop-blur-md z-50 border-b border-forest/5">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-baseline">
+            <a href="#" onclick="switchView('home'); return false;" class="font-serif text-xl tracking-wide text-forest hover:text-clay transition-colors duration-300">
+                oaks of righteousness.
+            </a>
+            <div class="space-x-6 text-sm font-medium text-stone">
+                <a href="#articles" onclick="switchView('home', 'articles'); return false;" class="hover:text-forest transition-colors">Articles</a>
+                <a href="#about" onclick="switchView('home', 'about'); return false;" class="hover:text-forest transition-colors">About</a>
+                <!--<a href="#subscribe" onclick="switchView('home', 'subscribe'); return false;" class="hover:text-forest transition-colors">Subscribe</a>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HOME VIEW ==================== -->
+    <div id="view-home" class="view-container">
+        
+        <header class="max-w-4xl mx-auto px-6 pt-20 pb-20 md:pt-28 md:pb-24">
+            <p class="text-clay font-medium text-sm tracking-widest mb-6">THEOLOGY &bull; <i>theos logia</i> &bull; THE STUDY OF GOD</p>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-forest leading-[1.15] tracking-tight mb-8">
+                The deep roots <br class="hidden md:block" />
+                of a reasoned faith.
+            </h1>
+            <p class="text-lg md:text-xl text-ink/80 max-w-2xl font-light leading-relaxed mb-10">
+                Hello! My name is Chris Plummer. I am a born again Christian seeking to shepherd the body of Christ into Scriptural understanding of orthodox doctrines. Welcome to a very early verion of the "oaks of righteousness" website!
+				<br/><br/>
+				On this website I seek to post articles about basic Christian doctrine to help Christians get grounded in the basics of their faith.
+				I hope you find this website a blessing to you in some way, and may God bless you, keep you, and may his face shine upon you. Amen.
+
+            </p>
+            
+            <div class="flex items-center gap-4">
+                <a href="#articles" class="bg-forest text-base px-6 py-3 rounded-full text-sm font-medium hover:bg-forest/90 transition-all duration-300">
+                    Read latest articles
+                </a>
+            </div>
+        </header>
+
+        <main id="articles" class="max-w-4xl mx-auto px-6 py-16 border-t border-forest/10">
+            <h2 class="font-serif text-2xl text-forest mb-12">All Articles</h2>
+
+            <div class="space-y-16">
+                
+                <!-- Featured Article: The Trinity -->
+                <article class="group cursor-pointer" onclick="switchView('trinity-article')">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-surface relative">
+                            <img src="https://images.unsplash.com/photo-1601662528567-526cd06f6582?q=80&w=800&auto=format&fit=crop" alt="Abstract clay textures" class="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out">
+                            <span class="absolute top-3 left-3 bg-forest/80 backdrop-blur-sm text-base text-xs px-3 py-1 rounded-full font-medium">Featured</span>
+                        </div>
+                        <div class="w-full md:w-3/5 pt-2">
+                            <div class="flex items-center gap-3 text-xs text-stone mb-3">
+                                <span class="text-stone">Sept. 18, 2026</span>
+                                <span class="w-1 h-1 rounded-full bg-clay/50"></span>
+                                <span class="text-clay font-medium">Theology</span>
+                            </div>
+                            <h3 class="font-serif text-2xl md:text-3xl text-forest mb-4 group-hover:text-clay transition-colors duration-300">
+                                The Architecture of Love <br/>The Trinity
+                            </h3>
+                            <p class="text-ink/70 leading-relaxed font-light mb-6 line-clamp-3">
+                                Is the Trinity a late philosophical invention or the organic unfolding of early Christian encounter with the risen Christ? An exploration into why a triune God solves the deep philosophical dilemma of relational reality.
+                            </p>
+                            <span class="text-forest text-sm font-medium group-hover:underline underline-offset-4 decoration-clay inline-flex items-center gap-1">Read article &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="border-forest/5">
+            </div>
+            
+            <div id="about" class="mt-28 pt-16 border-t border-forest/10">
+                <div class="max-w-2xl">
+                    <h2 class="font-serif text-2xl text-forest mb-6">About the Site</h2>
+                    <p class="text-ink/80 font-light leading-relaxed mb-4">
+                        Named after Isaiah 61:3, where God's people are called "oaks of righteousness, a planting of the Lord for the display of his splendor", this space is dedicated to cultivating deep, unshakeable intellectual roots in Christ "that we should no longer be children, tossed to and fro and carried about with every wind of doctrine, by the trickery of men" (Ephesians 4:14).
+                    </p>
+                    <p class="text-ink/80 font-light leading-relaxed">
+                        In a world of rushed hot takes and reactionary defense mechanisms, I hope to offer thoughtful engagement in Christian theology and apologetics for disciples of Jesus Christ to develop roots in the never-changing foundation of the Word of God.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ==================== TRINITY ARTICLE VIEW (SECOND PAGE) ==================== -->
+    <div id="view-trinity-article" class="view-container hidden">
+        <main class="max-w-3xl mx-auto px-6 pt-12 pb-24">
+            
+            <!-- Back Button -->
+            <button onclick="switchView('home')" class="inline-flex items-center gap-2 text-sm text-stone hover:text-forest transition-colors mb-8 group">
+                <span class="group-hover:-translate-x-1 transition-transform">&larr;</span> Back to articles
+            </button>
+
+            <!-- Article Header -->
+            <div class="mb-10">
+                <div class="flex items-center gap-3 text-xs text-stone mb-4">
+                    <span>Sept 18, 2026</span>
+                    <span class="w-1 h-1 rounded-full bg-clay/50"></span>
+                    <span class="text-clay font-medium">Theology</span>
+                </div>
+                <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-forest leading-[1.2] tracking-tight mb-6">
+                    The Architecture of Love <br/>The Trinity
+                </h1>
+                <p class="text-lg text-ink/80 font-light leading-relaxed">
+                    Is the Trinity a later philosophical corruption of early Christianity, or is it the mandatory bedrock for understanding God as personal, eternal love?
+                </p>
+            </div>
+
+            <!-- Article Body Content -->
+            <div class="prose prose-stone max-w-none text-ink/90 font-light leading-relaxed space-y-6 text-base md:text-lg">
+                <p class="first-letter:text-5xl first-letter:font-serif first-letter:text-forest first-letter:mr-3 first-letter:float-left">
+                    One of the most common charges leveled against orthodox Christianity by critics, echoed by neighboring monotheistic faiths like Islam and Judaism, and even Oneness Pentcostal Christians, is that the doctrine of the Trinity is incoherent. How could God be three persons, yet one being?
+                </p>
+
+                <p>
+                    When we examine the Scriptures both, Old Testament and New, and the philosophical requirements of divine love, a different picture emerges. The Trinity is not a contradiction wrapped in theological jargon; it is the breathtaking answer to how God can be relational in His very essence.
+                </p>
+
+                <h2 class="font-serif text-2xl md:text-3xl text-forest pt-6 pb-2">What is the Trinity?</h2>
+				
+				<p>
+					<strong>Definition:</strong> Within the one Being that is God, there exist eternally three coequal, coeternal Persons, namely, the Father, the Son, and the Holy Spirit. 
+				</p>
+				
+				<p>
+					God is one Being (monotheism) yet there are three divine, eternal, and equal persons that share this one Being.
+				</p>
+
+                <blockquote class="border-l-2 border-clay pl-6 my-8 italic font-serif text-xl text-forest/90">
+					It is important to recognize the distiction between the words Being and Person. <br/> <strong>Being</strong> is what makes something <strong>what</strong> it is. <br/> <strong>Person</strong> is what makes someone <strong>who</strong> he or she is.
+                </blockquote>
+				
+				<p>In short, Trinitarians believe the God of the Bible is <strong>one <u><i>what</i></u></strong> but <strong>three <u><i>whos</i></u></strong>.</p>
+				
+				<p>Each of the divine Persons shares fully and completely in the divine Being, while at the same time bear a relationship to one another within the Godhead itself.</p>
+
+				<p>
+					<ul style="list-style-type: disc; padding-left: 40px;">
+					  <li><strong>Foundation One: There is only one God (monotheism).</strong></li>
+					  <li><strong>Foundation Two: There are three divine persons.</strong></li>
+					  <li><strong>Foundation Three: The persons are co-equal and co-eternal.</strong></li>
+					</ul>
+				</p>
+
+                <h2 class="font-serif text-2xl md:text-2xl text-forest pt-6 pb-2">There is only one God</h2>
+				
+				<p>
+					The one God of the universe is Yahweh
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>To you it was shown, that you might know that the LORD (YHWH) Himself is God; there is none other besides Him.</i> (Deuteronomy 4:35)</strong></li>
+					  <li><strong><i>I am the LORD (YHWH), that is My name; And My glory I will not give to another.</i> (Isaiah 42:8)</strong></li>
+					</ul>
+				</p>
+				
+				<h2 class="font-serif text-2xl md:text-2xl text-forest pt-6 pb-2">The Father, the Son, and the Holy Spirit are that God</h2>
+				
+				<p>
+					The Father is God
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>Do not labor for the food which perishes, but for the food which endures to everlasting life, which the Son of Man will give you, because God the Father has set His seal on Him.</i> (John 6:27)</strong></li>
+					</ul>
+				</p>
+				
+				<p>
+					The Son is God
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>Jesus said to them, “Most assuredly, I say to you, before Abraham was, I AM.”</i> (John 8:58)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>"But you, Bethlehem Ephrathah, Though you are little among the thousands of Judah, Yet out of you shall come forth to Me The One to be Ruler in Israel, Whose goings forth are from of old, From everlasting.”</i> (Micah 5:2)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>Jesus Christ is the same yesterday, today, and forever.</i> (Hebrews 13:8)</strong></li>
+					</ul>
+				</p>
+				
+				<p>
+					The Holy Spirit is God
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>“The Spirit of the Lord spoke by me, And His word was on my tongue. The God of Israel said, The Rock of Israel spoke to me: ‘He who rules over men must be just, Ruling in the fear of God.</i> (2 Samuel 23:2-3)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>how much more shall the blood of Christ, who through the eternal Spirit offered Himself without spot to God, cleanse your conscience from dead works to serve the living God? </i> (Hebrews 9:14)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>But Peter said, “Ananias, why has Satan filled your heart to lie to the Holy Spirit and keep back part of the price of the land for yourself? While it remained, was it not your own? And after it was sold, was it not in your own control? Why have you conceived this thing in your heart? You have not lied to men but to God.”</i> (Acts 5:3-4)</strong></li>
+					</ul>
+				</p>
+				
+				<h2 class="font-serif text-2xl md:text-2xl text-forest pt-6 pb-2"><strong><u>The three persons are not each other</u></strong></h2>
+				
+				<p>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>"It is also written in your law that the testimony of TWO men is true. I am One who bears witness of Myself, and the Father who sent Me bears witness of Me."</i> (John 8:17-18)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>"And now, O Father, glorify Me together with Yourself, with the glory which I had with You before the world was."</i> (John 17:5)</strong></li>
+					</ul>
+					<ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem;">
+					  <li><strong><i>"Let this mind be in you which was also in Christ Jesus, who, being in the form of God, did not consider it robbery to be equal with God, but made Himself of no reputation, taking the form of a bondservant, and coming in the likeness of men.”</i> (Phillipians 2:5-7)</strong></li>
+					</ul>
+				</p>
+
+                <h2 class="font-serif text-2xl md:text-2xl text-forest pt-6 pb-2">Common Objections</h2>
+
+                <h3 class="font-serif text-xl text-forest pt-4 pb-2">Deuteronomy 6:4 and the "One God"</h3>
+				
+                <p style="font-size:0.95rem;">
+                    Deuteronomy 6:4, famously known as the <em>Shema</em>, declares: "Hear, O Israel: The LORD our God, the LORD is one." Critics often cite this as the ultimate proof against the Trinity, claiming that "one" strictly demands a singular, solitary person.
+                </p>
+                <p style="font-size:0.95rem;">
+                    However, exploring the original languages provides a much broader context. The Hebrew word used for "one" here is <em>echad</em>. While <em>echad</em> can refer to a solitary item, it is very frequently used in Scripture to describe a <strong>composite unity</strong>. For example, in Genesis 2:24, a husband and wife become "one (<em>echad</em>) flesh." In Ezra 2:64, the entire assembly of Israel is referred to as "one (<em>echad</em>)." In both cases, multiple persons make up a unified whole. (When ancient Hebrew needed to express absolute singularity, it typically used the word <em>yachid</em>).
+                </p>
+                <p style="font-size:0.95rem;">
+                    Similarly, in the Septuagint (the ancient Greek translation of the Old Testament), the Greek word chosen to translate <em>echad</em> in Deuteronomy 6:4 is <em>heis</em>, which also routinely denotes a united one rather than an isolated, solitary figure.
+                </p>
+                <p style="font-size:0.95rem;">
+                    Therefore, the <em>Shema</em> emphatically teaches monotheism—that there is only one divine Being—which is the very first foundational pillar of the Trinity[cite: 1]. It does not demand that this one God must be restricted to a single person, perfectly harmonizing with the triune nature of Yahweh revealed throughout the rest of Scripture.
+                </p>
+                
+                <h3 class="font-serif text-xl text-forest pt-4 pb-2">Isaiah 9:6 and the "Everlasting Father"</h3>
+                <p style="font-size:0.95rem;">
+                    A common objection raised by Oneness Pentecostals is rooted in Isaiah 9:6, where the prophetic title for Jesus includes the phrase "Everlasting Father"[cite: 1]. They argue this proves Jesus and the Father are the exact same person[cite: 1].
+                </p>
+                <p style="font-size:0.95rem;">
+                    However, looking closely at the original Hebrew idiom clarifies this title[cite: 1]. In Hebrew, the phrase translates more accurately to "Father of Eternity"[cite: 1]. In ancient Hebrew culture, calling someone the "father of" (<em>ab</em>) something was a common idiom used to denote that the person was the <strong>owner, author, or possessor</strong> of that specific thing or quality[cite: 1].
+                </p>
+                <p style="font-size:0.95rem;">
+                    We see this exact naming convention throughout Scripture in other names starting with <em>ab</em>[cite: 1]:
+                </p>
+                <ul style="list-style-type: disc; padding-left: 40px; font-size:0.9rem; margin-bottom: 1rem;">
+                    <li><strong>Abraham:</strong> Father of a multitude (possessor of many descendants)[cite: 1].</li>
+                    <li><strong>Abigale:</strong> Father of joy (possessor of joy)[cite: 1].</li>
+                    <li><strong>Abialbon:</strong> Father of strength (possessor of strength)[cite: 1].</li>
+                    <li><strong>Abiasaph:</strong> Father of gathering (possessor of gathering)[cite: 1].</li>
+                </ul>
+                <p style="font-size:0.95rem;">
+                    By naming Jesus the "Father of Eternity," Isaiah was not confusing the distinct persons of the Trinity[cite: 1]. Instead, he was declaring that the Messiah is the very possessor, creator, and owner of eternity itself[cite: 1].
+                </p>
+                
+            </div>
+
+            <!-- Article Footer / Share -->
+            <div class="mt-16 pt-8 border-t border-forest/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-stone">
+                    Published in <span class="text-clay">Theology</span>
+                </div>
+                <button onclick="switchView('home')" class="bg-forest text-base px-6 py-2.5 rounded-full text-sm font-medium hover:bg-forest/90 transition-all">
+                    Back to all articles
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="subscribe" class="bg-surface/50 border-t border-forest/10 mt-20 pb-12 pt-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-stone border-t border-forest/10 pt-8">
+                <p>&copy; 2026 Oaks of Righteousness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchView(viewName, targetHash) {
+            // Hide all view containers
+            const views = document.querySelectorAll('.view-container');
+            views.forEach(v => v.classList.add('hidden'));
+
+            // Show selected view
+            const selectedView = document.getElementById('view-' + viewName);
+            if (selectedView) {
+                selectedView.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // If switching back to home and a target hash is provided (like #articles or #about)
+            if (viewName === 'home' && targetHash) {
+                setTimeout(() => {
+                    const el = document.getElementById(targetHash);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 50);
+            }
+        }
+    </script>
+
+</body>
+</html>
